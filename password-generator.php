@@ -35,7 +35,7 @@
 $chars = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789\|/[]{}<>()#$&@%-+=_!?.:,;AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
 
 for($i=0;$i<12;$i++){
-	echo htmlentities(substr($chars, rand(0, strlen($chars)-1), 1));
+	echo htmlentities(substr($chars, mt_rand(0, strlen($chars)-1), 1));
 }
 ?></pre>
 <input name="refresh" type="button" value="Chci jiné" onclick="window.location.reload();">
